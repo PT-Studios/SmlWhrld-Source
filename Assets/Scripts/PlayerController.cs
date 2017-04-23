@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour {
             GameObject hitObj;
             
             Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, (Screen.height / 2), 0));
-            if (Physics.Raycast(ray, out hit, (2+sC.scale.x)))
+            if (Physics.Raycast(ray, out hit, (3+sC.scale.x)))
             {
                 hitObj = hit.collider.gameObject;
                 

@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour {
             time += Time.deltaTime;
 
             float min = time / 60;
-            float sec = time % 60;
+            float sec = time;
             float fraction = (time * 100) % 100;
 
             timerLabel.text = string.Format("{0:00}:{1:000}", sec, fraction);
